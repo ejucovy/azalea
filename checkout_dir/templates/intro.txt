@@ -1,0 +1,5 @@
+Templates used by applications, with heterogenous templating languages.
+
+These are named with the application component that uses them.
+
+Many are copied from distributed templates.
