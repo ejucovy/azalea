@@ -1,0 +1,26 @@
+The site is served on a single Paste Deploy configuration.
+
+The applications are installed in a virtualenv.
+
+The documents are all contained within a single top level
+directory for the site. The root of that directory is a
+checkout of a Bazaar repository.
+
+The canonical Bazaar repository lives on the filesystem
+but could move anywhere -- the checkout is the only thing
+that interacts with the repository directly.
+
+Labels used
+-----------
+
+/virtualenv_base/
+/path_to/paste.ini
+/checkout_dir/
+${repository_url}
+
+For unsolved-problems-in-egyptology.com,
+
+ ${repository_url} = file:///repository_path/
+ /path_to/ == /checkout_dir/../ == /repository_path/../
+
+However this is extrinsic to the Azalea layout.
