@@ -1,0 +1,9 @@
+/blog/
+ Contains bitsyblog data.
+
+/templates/
+ Contains application templates rendered by various components.
+ These are generally forked from the distributed templates, django-style.
+
+/www/
+ Contains data published directly to the web site.
