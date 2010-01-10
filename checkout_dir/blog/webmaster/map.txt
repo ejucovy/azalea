@@ -1,0 +1,18 @@
+/.password
+/.secret
+ The user's hashed password and shared secret string, used for 
+ authentication.
+
+/preferences.txt
+ The user's blog preferences -- datestamp format, stylesheets, etc.
+
+/css/
+ Stylesheets available for the user's blog. Currently none are provided.
+ But if you drop a css file in this directory, it should become available
+ as a choice in the bitsyblog preferences screen.
+
+/entries/
+ The blog entries. Bitsyblog reads and writes to this directory. You
+ can also write entries to this directory yourself without going through
+ bitsyblog; as long as they are properly formatted on the filesystem,
+ bitsyblog will happily publish any files it sees in here.

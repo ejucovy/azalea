@@ -1,0 +1,19 @@
+0.2
+===
+
+I don't want .password and .secret to be here.
+
+ * bitsyblog should take some piece of configuration to tell it
+   where to look for the user's auth data (both for reading and
+   writing, though we don't really use it for writing)
+
+ * do we even need .secret -- need to research this.
+
+Note though that this shouldn't be a security leak even though it
+feels like one, because Azalea will not directly publish any of
+the files under /blog/ to the web.
+
+But the user can conceivably access and write to these in the site's
+edit mode, which would break his ability to log in until a syadmin
+intervenes. So they should live outside the editable scope, i.e.
+outside of /checkout_dir/ altogether.

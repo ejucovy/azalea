@@ -1,0 +1,11 @@
+This directory contains user blogs.
+
+Each subdirectory within this directory represents a single user's blog.
+
+The name of a subdirectory matches the name of the user whose blog it is.
+
+Bitsyblog reads these files; none of this data is published directly to
+the web.
+
+Currently Azalea only provides a single blog, for the site's webmaster,
+so /webmaster/ is currently the only subdirectory here.
