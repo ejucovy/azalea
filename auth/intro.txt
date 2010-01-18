@@ -1,0 +1,17 @@
+The filesystem layout herein will describe the authorization policies
+that are applied to incoming requests to various URL paths for the
+site.
+
+Unless otherwise noted, authorization policies are acquired by all
+sub-resources, so:
+
+ * if bar.foo.com/foo requires REMOTE_USER then so will
+   bar.foo.com/foo/baz
+ * if bar.foo.com requires REMOTE_USER then so too shall
+   bar.foo.com/foo
+
+Labels:
+------
+
+foo.com: the site's top-level domain
+
