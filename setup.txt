@@ -1,0 +1,20 @@
+bzr init /srv/$DOMAIN/bzr
+bzr co /srv/$DOMAIN/bzr /srv/$DOMAIN/content
+cd /srv/$DOMAIN/content
+mkdir www
+bzr add www
+mkdir templates
+mkdir templates/decoupage
+mkdir templates/bitsyblog
+mkdir blog
+touch blog/site.css
+
+python make.py {{setup user}}
+
+* bzr repo must be created
+* checkout must be made
+* uploader base dir must be initialized
+* decoupage template dir(s) must exist
+* bitsyblog template dir(s) must exist
+* bitsyblog blog basedir must exist
+* bitsyblog default site.css must exist
